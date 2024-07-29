@@ -1,0 +1,100 @@
+@import "../../app.css";
+
+.contact {
+  height: 100%;
+  max-width: 1366px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.contact .textContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.contact .textContainer h1 {
+  font-size: 100px;
+  line-height: 88px;
+}
+
+.contact .textContainer span {
+  font-weight: 300;
+}
+
+.contact .formContainer {
+  flex: 1;
+  position: relative;
+}
+
+.contact .formContainer .phoneSvg {
+  stroke: crimson;
+  position: absolute;
+  margin: auto;
+  z-index: -1;
+}
+
+.contact .formContainer form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact .formContainer form input,
+.contact .formContainer form textarea {
+  padding: 20px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  border-radius: 5px;
+}
+
+.contact .formContainer form button {
+  padding: 20px;
+  border: none;
+  background-color: crimson;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 738px) {
+  .contact {
+    width: 100%;
+    padding: 20px; /* Increase padding for better spacing */
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Align items to the top */
+  }
+
+  .contact .textContainer {
+    text-align: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  .contact .textContainer h1 {
+    font-size: 50px;
+    line-height: 48px;
+  }
+
+  .contact .formContainer {
+    padding: 30px;
+    width: calc(100% - 40px); /* Adjust width to fit within the viewport */
+    max-width: 400px; /* Set maximum width for better readability */
+    box-sizing: border-box; /* Ensure padding is included in the width calculation */
+  }
+
+  .contact .formContainer form input,
+  .contact .formContainer form textarea {
+    padding: 15px;
+  }
+
+  .contact .formContainer form button {
+    padding: 15px;
+  }
+}

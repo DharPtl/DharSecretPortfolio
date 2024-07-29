@@ -1,0 +1,101 @@
+@import "../../app.css";
+
+.hero {
+  height: calc(100vh - 100px); /* Subtract the height of the navbar */
+  overflow: hidden;
+  position: relative;
+  background-image: url('/Logo.jpg'); /* Ensure the path is correct */
+  background-size: cover; /* Cover the entire area */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  padding-bottom: 100px; /* Add padding to the bottom to compensate for the navbar */
+}
+
+.hero .wrapper {
+  max-width: 1366px;
+  height: 100%;
+  margin: auto;
+}
+
+.hero .wrapper .textContainer {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+}
+
+@media (max-width: 738px) {
+  .hero .wrapper .textContainer {
+    height: 50%;
+    width: 100%;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.hero .wrapper .textContainer h2 {
+  font-size: 30px;
+  color: crimson;
+  letter-spacing: 10px;
+}
+
+.hero .wrapper .textContainer h1 {
+  font-size: 88px;
+}
+
+@media (max-width: 738px) {
+  .hero .wrapper .textContainer h1 {
+    font-size: 36px;
+  }
+}
+
+.hero .wrapper .textContainer .buttons button {
+  padding: 20px;
+  border: 3px solid white;
+  border-radius: 10px;
+  background-color: transparent;
+  color: white;
+  margin-right: 20px;
+  cursor: pointer;
+  font-weight: 300;
+}
+
+.hero .wrapper .textContainer img {
+  width: 50px;
+}
+
+.hero .imageContainer {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+@media (max-width: 738px) {
+  .hero .imageContainer {
+    height: 50%;
+    width: 100%;
+    top: unset;
+    bottom: 0;
+  }
+}
+
+.hero .imageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero .slidingTextContainer {
+  position: absolute;
+  font-size: 50vh;
+  bottom: -120px;
+  white-space: nowrap;
+  color: #ffffff09;
+  width: 50%;
+  font-weight: bold;
+}
