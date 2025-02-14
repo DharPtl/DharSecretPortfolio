@@ -6,7 +6,7 @@ const items = [
   {
     id: 0,
     title: "PaperCode",
-    img: "https://example.com/papercode-image.jpg", // Replace with actual image URL
+    img: "/src/components/images/Papercode.jpg", // Replace with actual image URL
     desc: "PaperCode is a innovative project that is coming soon.",
     githubLink: "https://github.com/PaperCodeCo"
   },
@@ -31,7 +31,7 @@ const items = [
   {
     id: 4,
     title: "Data Visualization Project",
-    img: "https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    img: "/src/components/images/dataviz.png",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
   },
 ];
@@ -113,6 +113,7 @@ const Portfolio = () => {
           <li>About</li>
           <li>Projects</li>
           <li>Contact</li>
+          <li>Technologies</li>
         </ul>
       </div>
       <div className="progress">
